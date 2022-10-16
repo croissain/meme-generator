@@ -1,5 +1,4 @@
 import Gallery from "./components/Gallery";
-import "antd/dist/antd.css";
 
 import "./App.scss";
 
