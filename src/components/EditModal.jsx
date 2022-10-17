@@ -64,7 +64,6 @@ const EditModal = ({ id, title, open, onClose, url, boxCount }) => {
 
           generateTextBoxes(boxCount);
           const params = generateParamsTextBoxes(boxCount);
-          console.log(params);
 
           const response = await fetch(
             `https://api.imgflip.com/caption_image${objectToQueryParam(params)}`

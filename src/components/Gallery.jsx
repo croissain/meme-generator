@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import GenerateButton from "./GenerateButton";
-import Sidebar from "./Sidebar";
 import Panel from "./Panel";
+import { Typography } from "antd";
+const { Title } = Typography;
 
 const Gallery = () => {
   const [panels, setPanels] = useState([]);
@@ -29,6 +30,9 @@ const Gallery = () => {
   return (
     <>
       <div id="main-board">
+        <Title level={1} className="h1-title">
+          CHOOSE YOUR MEME
+        </Title>
         <div className="panel_container">
           {panels.slice(startIndex, endIndex).map((panel) => {
             return (
@@ -46,9 +50,6 @@ const Gallery = () => {
           })}
           <GenerateButton onClick={() => handleClick()} />
         </div>
-      </div>
-      <div id="sidebar">
-        <Sidebar />
       </div>
     </>
   );
