@@ -82,3 +82,14 @@ code {
   color: white;
   line-height: 1.5;
 }
+
+.ant-image {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  border: 1px solid #ccc;
+}
+
+.ant-layout-sider {
+  padding-right: 20px;
+  background-color: white !important;
+}

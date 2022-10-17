@@ -16,7 +16,6 @@ const Gallery = () => {
   }, []);
 
   const handleClick = () => {
-    console.log("click");
     if (startIndex === 90 && endIndex === 100) {
       setStartIndex(0);
       setEndIndex(10);
@@ -41,6 +40,7 @@ const Gallery = () => {
                 name={panel.name}
                 height={panel.height}
                 width={panel.width}
+                box_count={panel.box_count}
               ></Panel>
             );
           })}
