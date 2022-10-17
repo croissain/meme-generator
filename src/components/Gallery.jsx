@@ -23,12 +23,12 @@ const Gallery = () => {
       setStartIndex(startIndex + 10);
       setEndIndex(endIndex + 10);
     }
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
     <>
       <div id="main-board">
-        <GenerateButton onClick={() => handleClick()} />
         <div className="panel_container">
           {panels.slice(startIndex, endIndex).map((panel) => {
             return (
@@ -44,6 +44,7 @@ const Gallery = () => {
               ></Panel>
             );
           })}
+          <GenerateButton onClick={() => handleClick()} />
         </div>
       </div>
       <div id="sidebar">

@@ -41,19 +41,6 @@ const Panel = ({ id, url, name, height, width, box_count }) => {
         boxCount={boxCount}
       ></EditModal>
     </>
-    // <div
-    //   // ref={ref}
-    //   id={id}
-    //   className="panel"
-    //   name={name}
-    //   style={{
-    //     backgroundImage: `url(${url})`,
-    //     backgroundSize: "100% 100%",
-    //     backgroundRepeat: "no-repeat",
-    //     gridRowEnd: `span ${gridHeight}`,
-    //   }}
-    // >
-    // </div>
   );
 };
 
